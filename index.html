@@ -116,6 +116,7 @@ button {
     <br><br>
     <button onclick="modifyUrl()">Modify</button>
     <button onclick="copyToClipboard()">Copy</button>
+    <button onclick="reset()">Reset</button>
     <br><br>
     </div>
     <!--html-->
@@ -148,6 +149,10 @@ button {
         // Copy to the clipboard
         document.execCommand("copy");
       }
+      function reset() {
+      document.getElementById("original").value = "";
+      document.getElementById("modified").value = "";
+    }
     </script>
     <!--java-script-->
     
